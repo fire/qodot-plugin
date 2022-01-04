@@ -1,9 +1,9 @@
 class_name OrbitArm
-extends Spatial
+extends Node3D
 
-export(bool) var translate := true
-export(bool) var rotate := true
-export(bool) var zoom := true
+@export var translate :bool = true
+@export var rotate :bool= true
+@export var zoom :bool= true
 
 var yaw = 0.0
 var pitch = 0.0

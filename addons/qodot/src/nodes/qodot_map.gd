@@ -19,7 +19,7 @@ var map_file := "" :
 		if map_file != new_map_file:
 			map_file = new_map_file
 var inverse_scale_factor := 16.0
-var entity_fgd := preload("res://addons/qodot/game_definitions/fgd/qodot_fgd.tres")
+var entity_fgd := load("res://addons/qodot/game_definitions/fgd/qodot_fgd.tres")
 var base_texture_dir := "res://textures"
 var texture_file_extensions := PackedStringArray(["png"])
 
@@ -416,7 +416,7 @@ func build_entity_nodes() -> Array:
 			node_name += "_" + classname
 			if classname in entity_definitions:
 				var entity_definition := entity_definitions[classname] as QodotFGDClass
-				if entity_definition is QodotFGDSolidClass:
+				if entity_definition.is_class("QodotFGDSolidClass") :
 					if entity_definition.spawn_type == QodotFGDSolidClass.SpawnType.MERGE_WORLDSPAWN:
 						entity_nodes.append(null)
 						continue

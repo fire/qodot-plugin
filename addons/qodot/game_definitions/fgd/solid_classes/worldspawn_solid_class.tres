@@ -1,22 +1,19 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cwmkflllx4y4p"]
 
-[ext_resource path="res://addons/qodot/src/resources/game-definitions/fgd/qodot_fgd_solid_class.gd" type="Script" id=1]
+[ext_resource type="Script" path="res://addons/qodot/src/resources/game-definitions/fgd/qodot_fgd_solid_class.gd" id="1"]
 
 [resource]
-script = ExtResource( 1 )
+script = ExtResource( "1" )
 class_options = "----------------------------------------------------------------"
 classname = "worldspawn"
 description = "World3D Entity"
 qodot_internal = false
-base_classes = [  ]
+base_classes = []
 class_properties = {
-
 }
 class_property_descriptions = {
-
 }
 meta_properties = {
-
 }
 node_options = "----------------------------------------------------------------"
 node_class = "StaticBody3D"
