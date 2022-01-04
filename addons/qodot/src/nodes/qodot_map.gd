@@ -19,7 +19,7 @@ var map_file := "" :
 		if map_file != new_map_file:
 			map_file = new_map_file
 var inverse_scale_factor := 16.0
-var entity_fgd := preload("res://addons/qodot/game_definitions/fgd/qodot_fgd.tres")
+var entity_fgd := load("res://addons/qodot/game_definitions/fgd/qodot_fgd.tres")
 var base_texture_dir := "res://textures"
 var texture_file_extensions := PackedStringArray(["png"])
 
